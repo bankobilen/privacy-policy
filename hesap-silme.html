@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banko Bilen – Hesap Silme / Account Deletion</title>
+<meta name="description" content="Banko Bilen hesabınızı ve verilerinizi nasıl silersiniz. How to delete your Banko Bilen account and data.">
+<style>
+:root{--bg:#0A1712;--kart:#12241B;--yazi:#E8EFEA;--soluk:#9BB0A4;--lime:#C4F135;--cizgi:#23402F}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--yazi);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.sar{max-width:760px;margin:0 auto;padding:28px 18px 60px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.marka{font-weight:700;letter-spacing:2px;font-size:15px}.marka b{color:var(--lime)}
+.dil button{background:var(--kart);color:var(--yazi);border:1px solid var(--cizgi);border-radius:20px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer}
+.dil button.aktif{border-color:var(--lime);color:var(--lime)}
+h1{font-size:28px;line-height:1.25;margin:22px 0 10px}
+h2{font-size:19px;margin:28px 0 8px;color:var(--lime)}
+a{color:var(--lime)}
+ol,ul{padding-left:22px}li{margin:5px 0}
+.kutu{background:var(--kart);border:1px solid var(--cizgi);border-radius:12px;padding:14px 16px;margin:14px 0}
+.dugme{display:inline-block;background:var(--lime);color:#0A1712;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:12px;margin-top:6px}
+.js [data-dil]:not(.goster){display:none}
+footer{margin-top:40px;color:var(--soluk);font-size:14px;border-top:1px solid var(--cizgi);padding-top:16px}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="sar">
+<header>
+  <div class="marka">BANKO <b>BİLEN</b></div>
+  <div class="dil"><button id="b-tr" onclick="dil('tr')">Türkçe</button> <button id="b-en" onclick="dil('en')">English</button></div>
+</header>
+
+<main data-dil="tr" lang="tr">
+<h1>Hesap ve veri silme</h1>
+<p>Banko Bilen hesabınızı ve hesabınıza bağlı verileri aşağıdaki iki yoldan biriyle silebilirsiniz.</p>
+
+<h2>1. Uygulama içinden</h2>
+<ol>
+<li>Banko Bilen uygulamasını açın ve hesabınıza giriş yapın.</li>
+<li>Sol üstteki <strong>yan menüye (☰)</strong> dokunun.</li>
+<li><strong>Hesabımı Sil</strong> seçeneğine dokunun ve silme işlemini onaylayın.</li>
+</ol>
+
+<h2>2. E-posta ile (uygulamaya erişiminiz yoksa)</h2>
+<div class="kutu">
+<p style="margin-top:0">Hesabınıza kayıtlı e-posta adresinden <strong>bankobilen@gmail.com</strong> adresine, konu satırı <strong>"Hesap silme"</strong> olan bir e-posta gönderin. Hesap sahibi olduğunuzu doğruladıktan sonra hesabınızı en geç <strong>30 gün</strong> içinde sileriz ve size bilgi veririz.</p>
+<a class="dugme" href="mailto:bankobilen@gmail.com?subject=Hesap%20silme&amp;body=Banko%20Bilen%20hesab%C4%B1m%C4%B1n%20ve%20verilerimin%20silinmesini%20istiyorum.">Silme talebi gönder</a>
+</div>
+
+<h2>Neler silinir?</h2>
+<ul>
+<li>Hesabınız ve giriş bilgileriniz (e-posta adresi, şifre, Google/Apple bağlantısı)</li>
+<li>Kullanıcı kimliğiniz, referans kodunuz ve kredi bakiyeniz</li>
+<li>Hesabınıza bağlı VIP ve abonelik kayıtları</li>
+<li>Bildirim kayıtlarınız</li>
+</ul>
+
+<h2>Neler saklanabilir?</h2>
+<ul>
+<li>Satın alma kayıtları, yasal saklama yükümlülükleri gereği Google Play / Apple tarafında ve yasal süre boyunca muhasebe kayıtlarında tutulabilir.</li>
+<li>Kişiyle eşleştirilemeyen kullanım istatistikleri (Firebase Analytics) en fazla 14 ay saklanır.</li>
+</ul>
+
+<div class="kutu"><strong>Önemli:</strong> Hesabı silmek aktif aboneliği iptal etmez. Ücretlendirilmeye devam etmemek için aboneliğinizi Google Play'de (<em>Play Store → Profil → Ödemeler ve abonelikler → Abonelikler</em>) veya iPhone'da (<em>Ayarlar → Adınız → Abonelikler</em>) ayrıca iptal edin.</div>
+
+<p>Ayrıntılar için <a href="index.html">Gizlilik Politikası</a>'na bakabilirsiniz.</p>
+</main>
+
+<main data-dil="en" lang="en">
+<h1>Account and data deletion</h1>
+<p>You can delete your Banko Bilen account and the data linked to it in either of the two ways below.</p>
+
+<h2>1. In the app</h2>
+<ol>
+<li>Open the Banko Bilen app and sign in to your account.</li>
+<li>Tap the <strong>side menu (☰)</strong> in the top-left corner.</li>
+<li>Tap <strong>Delete My Account</strong> and confirm.</li>
+</ol>
+
+<h2>2. By email (if you can't access the app)</h2>
+<div class="kutu">
+<p style="margin-top:0">Send an email from the address registered to your account to <strong>bankobilen@gmail.com</strong> with the subject <strong>"Account deletion"</strong>. Once we confirm you own the account, we will delete it within <strong>30 days</strong> and let you know.</p>
+<a class="dugme" href="mailto:bankobilen@gmail.com?subject=Account%20deletion&amp;body=Please%20delete%20my%20Banko%20Bilen%20account%20and%20data.">Send deletion request</a>
+</div>
+
+<h2>What is deleted</h2>
+<ul>
+<li>Your account and sign-in details (email address, password, Google/Apple link)</li>
+<li>Your user ID, referral code and credit balance</li>
+<li>VIP and subscription records linked to your account</li>
+<li>Your notification registrations</li>
+</ul>
+
+<h2>What may be kept</h2>
+<ul>
+<li>Purchase records may be kept by Google Play / Apple and in accounting records for the legally required period.</li>
+<li>Usage statistics that cannot be linked to you (Firebase Analytics) are kept for up to 14 months.</li>
+</ul>
+
+<div class="kutu"><strong>Important:</strong> deleting your account does not cancel an active subscription. To stop being charged, cancel it separately in Google Play (<em>Play Store → Profile → Payments &amp; subscriptions → Subscriptions</em>) or on iPhone (<em>Settings → your name → Subscriptions</em>).</div>
+
+<p>See the <a href="index.html?dil=en">Privacy Policy</a> for more details.</p>
+</main>
+
+<footer>Banko Bilen · <a href="mailto:bankobilen@gmail.com">bankobilen@gmail.com</a></footer>
+</div>
+<script>
+function dil(d){try{localStorage.setItem('bb-dil',d)}catch(e){}
+document.querySelectorAll('[data-dil]').forEach(function(m){m.classList.toggle('goster',m.getAttribute('data-dil')===d)});
+document.documentElement.lang=d;document.getElementById('b-tr').classList.toggle('aktif',d==='tr');document.getElementById('b-en').classList.toggle('aktif',d==='en');}
+(function(){var q=(location.search.match(/dil=(tr|en)/)||[])[1],s=null;try{s=localStorage.getItem('bb-dil')}catch(e){}
+var t=q||s||((navigator.language||'tr').toLowerCase().indexOf('tr')===0?'tr':'en');dil(t);})();
+</script>
+</body>
+</html>
